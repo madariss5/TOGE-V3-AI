@@ -11,27 +11,27 @@ if (!fs.existsSync(global.SESSION_DIR)) {
 }
 
 // ID de session (peut être défini via une variable d'environnement)
-global.SESSION_ID = process.env.SESSION_ID || 'default_session'; // Utilisez une session par défaut si aucune n'est spécifiée
+global.SESSION_ID = process.env.SESSION_ID || '{"noiseKey":{"private":{"type":"Buffer","data":"aEOR3SK44tBWWy42iSmeF2gf7nWW2Cfax8XqgqAY4mM="},"public":{"type":"Buffer","data":"gFrZSMw+21h8f/ETiBHGLjzJgHZEw0TPm0YpJp20iiE="}},"pairingEphemeralKeyPair":{"private":{"type":"Buffer","data":"+LUkJpFffQF22nM+lv+jl99/g+GcNALH4utELCY0MGg="},"public":{"type":"Buffer","data":"zt/PfwxVbQAPtWOar5JtM/ccKyDb7C6IZdnJUKDSHDE="}},"signedIdentityKey":{"private":{"type":"Buffer","data":"wCXKtbjH/lKvORtyNKCdWdiIAazjY+yFwMFyqlRF+GI="},"public":{"type":"Buffer","data":"9A0Bq9zpGczP4txd/H7VQvxq2BW9flxyCfwbGKeawEk="}},"signedPreKey":{"keyPair":{"private":{"type":"Buffer","data":"4IT0FhaYQx/tVeW4dnOhRmxMNJMgpKGRR/QIx5ycMW4="},"public":{"type":"Buffer","data":"bREvxRQPbFSQSz+6L+7iSEvrD7JHZFBRCY7CQJHDbmc="}},"signature":{"type":"Buffer","data":"5GqHzOAL2GD2LO7MARMuXEmPgOclM192hroT+yfxQgUPBo1hefcyRPwDD2iThzK+VFfBs6QeiGgxLQoAcqDMAg=="},"keyId":1},"registrationId":131,"advSecretKey":"q42UqlGFXq2kj9EHHkYSKWlylNkhmoEhqHp+4AdKYVQ=","processedHistoryMessages":[{"key":{"remoteJid":"4915562378343@s.whatsapp.net","fromMe":true,"id":"7BAE0F88226F9C80199FF89BE5D1AF73"},"messageTimestamp":1741114325},{"key":{"remoteJid":"4915562378343@s.whatsapp.net","fromMe":true,"id":"068F1AC8916015CA545ED5556AE1015F"},"messageTimestamp":1741114325},{"key":{"remoteJid":"4915562378343@s.whatsapp.net","fromMe":true,"id":"B3F349C56D75B058CEFA51377ECBB72B"},"messageTimestamp":1741114331},{"key":{"remoteJid":"4915562378343@s.whatsapp.net","fromMe":true,"id":"7F913A360A75776AD648F1AD182424E6"},"messageTimestamp":1741114333},{"key":{"remoteJid":"4915562378343@s.whatsapp.net","fromMe":true,"id":"33F48692E55B0FBE0EB770FB9BA570E1"},"messageTimestamp":1741114334}],"nextPreKeyId":31,"firstUnuploadedPreKeyId":31,"accountSyncCounter":1,"accountSettings":{"unarchiveChats":false},"deviceId":"cB6f1ID6RpOAeomhB4elrw","phoneId":"18890954-277d-4746-8766-1a436c12a490","identityId":{"type":"Buffer","data":"qeuEl4Hx81U/YCiTUJqU8dOrGnw="},"registered":true,"backupToken":{"type":"Buffer","data":"k0JX4hAVMUOLjFkLelgTvyElOSo="},"registration":{},"pairingCode":"EXXW7CL4","me":{"id":"4915562378343:80@s.whatsapp.net","lid":"87712426110989:80@lid","name":"."},"account":{"details":"CMzPyS0Qz5edvgYYASAAKAA=","accountSignatureKey":"72V11lIZvalJvF262bMXw34nKgRN9Ko3COgw+4H4eRs=","accountSignature":"G83B0V+kr/m+frWKjKyO2oNdbB3PYsgp7hcTANJTshOkhQH82UxUhK81ecOgAHOFYYv+DzvBp2tc+lvSj2z2AA==","deviceSignature":"UB7TD7NrIUrSMNt/W6EadHpD6FuIpozXVojtBMeuveVe+p036/87eM3D1aUcMSifure5h4N6E+N/KhQtU/RfDA=="},"signalIdentities":[{"identifier":{"name":"4915562378343:80@s.whatsapp.net","deviceId":0},"identifierKey":{"type":"Buffer","data":"Be9lddZSGb2pSbxdutmzF8N+JyoETfSqNwjoMPuB+Hkb"}}],"platform":"android","routingInfo":{"type":"Buffer","data":"CAUIAg=="},"lastAccountSyncTimestamp":1741114324,"lastPropHash":"PWk5B","myAppStateKeyId":"AAAAALZG"}'; // Utilisez une session par défaut si aucune n'est spécifiée
 
 // Chemin du fichier de session
 global.SESSION_FILE = path.join(global.SESSION_DIR, `${global.SESSION_ID}.json`);
 
 //contact details
 global.ownernumber = [process.env.OWNER_NUMBER || "24105114159"];
-global.ownername = process.env.OWNER_NAME || "𓆩𝐓𝐎𝐆𝐄𓆪 ✇ ◤✞𝐈𝐍𝐔𝐌𝐀𝐊𝐈";
+global.ownername = process.env.OWNER_NAME || "Martin";
 global.ytname = "YT: kenzo3146";
 global.socialm = "GitHub: toge012345";
-global.location = "Africa";
+global.location = "Europe";
 
 global.botname = process.env.BOTNAME || "𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟑"; //name of the bot
 
 //sticker details
 global.stickername = process.env.STICKER || "𝐓𝐎𝐆𝐄-𝐌𝐃-𝐕𝟑";
 global.packname = 'Sticker By';
-global.author = process.env.AUTHOR || "𓆩𝐓𝐎𝐆𝐄𓆪 ✇ ◤✞𝐈𝐍𝐔𝐌𝐀𝐊𝐈";
+global.author = process.env.AUTHOR || "𝔹𝕃𝔸ℂ𝕂𝕊𝕂𝕐-𝕄𝔻";
 //console view/theme
 global.themeemoji = '𓅃';
-global.wm = "𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨";
+global.wm = "𝔹𝕃𝔸ℂ𝕂𝕊𝕂𝕐-𝕄𝔻 𝐈𝐧𝐜 ✨";
 
 //theme link
 global.link = 'https://whatsapp.com/channel/0029VaiuD4s4IBhI0fzbv40Z';
