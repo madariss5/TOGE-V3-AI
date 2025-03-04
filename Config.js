@@ -17,7 +17,7 @@ global.SESSION_ID = process.env.SESSION_ID || '{"noiseKey":{"private":{"type":"B
 global.SESSION_FILE = path.join(global.SESSION_DIR, `${global.SESSION_ID}.json`);
 
 //contact details
-global.ownernumber = [process.env.OWNER_NUMBER || "24105114159"];
+global.ownernumber = [process.env.OWNER_NUMBER || "4915563151347"];
 global.ownername = process.env.OWNER_NAME || "Martin";
 global.ytname = "YT: kenzo3146";
 global.socialm = "GitHub: toge012345";
